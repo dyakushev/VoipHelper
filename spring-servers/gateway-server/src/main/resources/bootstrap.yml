@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: ${SPRING_APPLICATION_NAME:gateway-server}
+
+  cloud:
+    config:
+      uri: ${SPRING_CONFIG_URI:http://10.20.113.22:8888}
+      label: ${SPRING_CONFIG_LABEL:dev}
+      profile: ${SPRING_CONFIG_PROFILE:dev}
+      fail-fast: ${SPRING_CONFIG_FAIL-FAST:true}
+
+encrypt:
+  key: ${ENCRYPT_KEY}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:addPhoneResponse xmlns:ns2="http://www.cisco.com/AXL/API/12.5">
+    <return>{A0135DD0-892A-4E3A-7CAB-1DB3140E39E6}
+    </return>
+</ns2:addPhoneResponse>

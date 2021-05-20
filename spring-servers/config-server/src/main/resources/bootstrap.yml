@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: ${SPRING_APPLICATION_NAME:config-server}
+  cloud:
+    config:
+      server:
+        #  native:
+        #   search-locations: file:///D:/Java/VoipHelper/spring-servers/config-server/src/main/resources/config
+        git:
+          uri: ${SPRING_CLOUD_SERVER_GIT_URI}
+          username: ${SPRING_CLOUD_SERVER_GIT_USERNAME}
+          password: ${SPRING_CLOUD_SERVER_GIT_PASSWORD}
+          search-paths: '{application}'
+          clone-on-start: true
+          encrypt:
+            enabled: false
+  security:
+    user:
+      name: ${SPRING_SECURITY_USER_NAME}
+      password: ${SPRING_SECURITY_USER_PASSWORD}
+encrypt:
+  key: ${ENCRYPT_KEY}
+server:
+  port: ${SERVER_PORT:8888}
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: ${EUREKA_CLIENT_SERVICEURL_DEFAULTZONE:http://10.20.113.22:8761/eureka/}
+
+

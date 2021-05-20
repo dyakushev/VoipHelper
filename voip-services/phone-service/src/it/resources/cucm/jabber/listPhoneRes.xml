@@ -1,0 +1,10 @@
+<ns:listPhoneResponse xmlns:ns="http://www.cisco.com/AXL/API/12.5">
+    <return>
+        <phone uuid="{D2AB9F81-E603-3534-E984-306D8AC040D8}">
+            <name>FAKE_DEVICE_NAME_1</name>
+        </phone>
+        <phone uuid="{D8B61F1D-BCB5-127B-3BE6-1A3B262A4879}">
+            <name>FAKE_DEVICE_NAME_2</name>
+        </phone>
+    </return>
+</ns:listPhoneResponse>

@@ -1,0 +1,9 @@
+<ns:getUserResponse xmlns:ns="http://www.cisco.com/AXL/API/12.5">
+    <return>
+        <user uuid="{8C00D86E-29ED-9155-A67C-19C2EC8701FF}">
+            <associatedDevices>
+                <device>FAKE_DEVICE</device>
+            </associatedDevices>
+        </user>
+    </return>
+</ns:getUserResponse>

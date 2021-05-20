@@ -1,0 +1,11 @@
+[
+  {
+    "exten": "69315",
+    "id": 100715,
+    "context": "opensips",
+    "priority": 1,
+    "app": "Answer",
+    "appdata": "()",
+    "links": []
+  }
+]

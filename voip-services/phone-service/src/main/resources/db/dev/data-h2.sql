@@ -1,0 +1,2 @@
+insert into extensions(id,context,exten, priority,app,appdata) VALUES (61555,'test','61555',1,'61555','61555');
+insert into extensions(id,context,exten, priority,app,appdata) VALUES (61000,'test','61000',1,'61000','61000');

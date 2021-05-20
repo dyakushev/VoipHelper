@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns:updatePhoneResponse xmlns:ns="http://www.cisco.com/AXL/API/12.5">
+    <return>{145AABD6-DA6C-FEC2-5021-ED6695CB9469}</return>
+</ns:updatePhoneResponse>

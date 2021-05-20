@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns3:getAppUser xmlns:ns3="http://www.cisco.com/AXL/API/12.5">
+    <userid>pgtest</userid>
+    <returnedTags>
+        <associatedDevices/>
+    </returnedTags>
+</ns3:getAppUser>

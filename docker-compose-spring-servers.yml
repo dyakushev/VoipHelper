@@ -1,0 +1,44 @@
+version: '3.5'
+
+services:
+
+  eureka-server:
+    build: spring-servers/eureka-server
+    ports:
+      - 8761:8761
+    container_name: eureka-server
+    networks:
+      - voip
+
+  config-server:
+    build: spring-servers/config-server
+    environment:
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka/
+      - SPRING_CLOUD_SERVER_GIT_URI=https://HOSTNAME/voiphelper/voip-services/git-configuration.git
+      - SPRING_CLOUD_SERVER_GIT_USERNAME=
+      - SPRING_CLOUD_SERVER_GIT_PASSWORD=
+      - SPRING_PROFILES_ACTIVE=dev
+    depends_on:
+      - eureka-server
+    ports:
+      - 8888:8888
+    container_name: config-server
+    networks:
+      - voip
+
+  gateway-server:
+    build: gateway-server
+    environment:
+      - SPRING_CONFIG_URI=http://config-server:8888
+      - SPRING_CONFIG_LABEL=dev
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka/
+    depends_on:
+      - eureka-server
+      - config-server
+    ports:
+      - 8090:8090
+    container_name: gateway-server
+    networks:
+      - voip
+networks:
+  voip:

@@ -1,0 +1,14 @@
+<ns:getPhoneResponse xmlns:ns="http://www.cisco.com/AXL/API/12.5">
+    <return>
+        <phone ctiid="211" uuid="{35410C8E-15DB-5DBA-66CB-A265A36ED536}">
+            <lines>
+                <line uuid="{A0136945-9006-C9AE-E636-EDC33C032AC1}">
+                    <dirn uuid="{4AEE66ED-6150-FE8A-52AF-87964021F901}">
+                        <pattern>12345</pattern>
+                    </dirn>
+                </line>
+            </lines>
+            <digestUser>mockuser</digestUser>
+        </phone>
+    </return>
+</ns:getPhoneResponse>

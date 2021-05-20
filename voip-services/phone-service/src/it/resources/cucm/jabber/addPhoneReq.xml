@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns3:addPhone xmlns:ns3="http://www.cisco.com/AXL/API/12.5">
+    <phone>
+        <name>CSFMOCKUSER</name>
+        <description>mockuser</description>
+        <product>Cisco Unified Client Services Framework</product>
+        <class>Phone</class>
+        <protocol>SIP</protocol>
+        <protocolSide>User</protocolSide>
+        <callingSearchSpaceName>CSS_Phone_International</callingSearchSpaceName>
+        <devicePoolName>DP_Default</devicePoolName>
+        <securityProfileName>Cisco Unified Client Services Framework - Standard SIP Non-Secure Profile
+        </securityProfileName>
+        <enableExtensionMobility>false</enableExtensionMobility>
+        <builtInBridgeStatus>On</builtInBridgeStatus>
+        <ownerUserName>LisenceUser1</ownerUserName>
+        <digestUser>mockuser</digestUser>
+        <vendorConfig>
+            <videoCapability>0</videoCapability>
+        </vendorConfig>
+    </phone>
+</ns3:addPhone>

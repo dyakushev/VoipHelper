@@ -1,0 +1,29 @@
+version: '3.5'
+
+services:
+  statistics-service:
+    build: voip-services/statistics-service
+    ports:
+      - 8083:8083
+    container_name: statistics-service
+    networks:
+      - voip
+
+  phone-service:
+    build: voip-services/phone-service
+    ports:
+      - 8082:8082
+    container_name: phone-service
+    networks:
+      - voip
+
+  vc-service:
+    build: voip-services/vc-service
+    ports:
+      - 8084:8084
+    container_name: vc-service
+    networks:
+      - voip
+
+networks:
+  voip:

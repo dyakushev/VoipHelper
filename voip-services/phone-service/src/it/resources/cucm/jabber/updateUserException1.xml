@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<soapenv:Fault xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <faultcode>soapenv:Server</faultcode>
+    <faultstring>Item not valid: The specified mockuser was not found</faultstring>
+    <detail>
+        <axlError>
+            <axlcode>5007</axlcode>
+            <axlmessage>Item not valid: The specified mockuser was not found</axlmessage>
+            <request>updateUser</request>
+        </axlError>
+    </detail>
+</soapenv:Fault>

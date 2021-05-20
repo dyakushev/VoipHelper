@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns3:getPhone xmlns:ns3="http://www.cisco.com/AXL/API/12.5">
+    <name>CSFMOCKUSER</name>
+    <returnedTags>
+        <lines>
+            <line>
+                <dirn>
+                    <pattern/>
+                </dirn>
+            </line>
+        </lines>
+        <digestUser/>
+    </returnedTags>
+</ns3:getPhone>

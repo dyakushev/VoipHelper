@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<soapenv:Fault xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <faultcode>soapenv:Server
+    </faultcode>
+    <faultstring>Device not found</faultstring>
+    <detail>
+        <axlError>
+            <axlcode>5003</axlcode>
+            <axlmessage>Device not found</axlmessage>
+            <request>updateUser</request>
+        </axlError>
+    </detail>
+</soapenv:Fault>

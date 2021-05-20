@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:updateUserResponse xmlns:ns2="http://www.cisco.com/AXL/API/12.5">
+    <return>{8C00D86E-29ED-9155-A67C-19C2EC8701FF}</return>
+</ns2:updateUserResponse>

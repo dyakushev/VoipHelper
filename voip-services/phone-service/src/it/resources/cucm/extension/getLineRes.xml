@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns:getLineResponse xmlns:ns="http://www.cisco.com/AXL/API/12.5">
+    <return>
+        <line uuid="{F0ACB7EC-3FA5-EE76-A013-BB4BFF2A2988}"/>
+    </return>
+</ns:getLineResponse>

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<soapenv:Fault xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <faultcode>soapenv:Client
+    </faultcode>
+    <faultstring>Cannot associate a null DN with a non-UDT (Universal Device Template) device. Only UDT with
+        NULL DN is allowed.
+    </faultstring>
+    <detail>
+        <axlError>
+            <axlcode>4215</axlcode>
+            <axlmessage>Cannot associate a null DN with a non-UDT (Universal Device Template) device. Only UDT with NULL
+                DN is
+                allowed.
+            </axlmessage>
+            <request>updatePhone</request>
+        </axlError>
+    </detail>
+</soapenv:Fault>

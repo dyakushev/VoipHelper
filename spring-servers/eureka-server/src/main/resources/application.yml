@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: ${SPRING_APPLICATION_NAME:eureka-server}
+server:
+  port: ${SERVER_PORT:8761}
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+  server:
+    eviction-interval-timer-in-ms: 1000

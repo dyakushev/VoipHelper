@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:updatePhone xmlns:ns2="http://www.cisco.com/AXL/API/12.5">
+    <name>CSFMOCKUSER</name>
+    <addLines>
+        <line>
+            <index>1</index>
+            <dirn>
+                <pattern>12345</pattern>
+                <routePartitionName>PT_Phone_Generic</routePartitionName>
+            </dirn>
+            <maxNumCalls>2</maxNumCalls>
+            <busyTrigger>1</busyTrigger>
+            <recordingProfileName>RP_Mediasense</recordingProfileName>
+            <recordingFlag>Automatic Call Recording Enabled</recordingFlag>
+        </line>
+    </addLines>
+</ns2:updatePhone>
